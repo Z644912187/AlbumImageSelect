@@ -71,7 +71,7 @@ public class PickBigImagesActivity extends Activity implements ViewPager.OnPageC
         findViewById(R.id.iv_back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                onBackPressed();
             }
         });
 

@@ -220,7 +220,7 @@ public class PickOrTakeImageActivity extends Activity implements View.OnClickLis
         findViewById(R.id.iv_back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                onBackPressed();
             }
         });
 
@@ -1035,6 +1035,7 @@ public class PickOrTakeImageActivity extends Activity implements View.OnClickLis
 
     /**
      * 点击完成按钮之后将图片的地址返回到上一个页面
+     * picklist即为最终选择的照片
      */
     private void returnDataAndClose(){
         AlbumBitmapCacheHelper.getInstance().clearCache();
